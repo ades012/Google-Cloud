@@ -4,7 +4,7 @@ resource "google_compute_address" "vm_static_ip" {
 }
  
 resource "google_compute_instance" "vm_instance" {
-  name         = "terraform-instance"
+  name         = "<INSTANCE-NAME>"
   machine_type = "f1-micro"
   tags         = ["web", "dev"]
   boot_disk {
