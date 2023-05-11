@@ -1,0 +1,37 @@
+├── main.tf
+├── variables.tf
+├── outputs.tf
+├── modules
+│   ├── vpc
+│   │   ├── main.tf
+│   │   ├── variables.tf
+│   │   ├── outputs.tf
+│   │   └── data
+│   │       ├── aws_availability_zones.tf
+│   │       └── aws_instance_type.tf
+│   ├── subnet
+│   │   ├── main.tf
+│   │   ├── variables.tf
+│   │   └── outputs.tf
+│   ├── security_group
+│   │   ├── main.tf
+│   │   ├── variables.tf
+│   │   └── outputs.tf
+│   ├── load_balancer
+│   │   ├── main.tf
+│   │   ├── variables.tf
+│   │   ├── outputs.tf
+│   │   └── data
+│   │       └── aws_lb_ssl_cert.tf
+│   ├── ec2_instance
+│   │   ├── main.tf
+│   │   ├── variables.tf
+│   │   ├── outputs.tf
+│   │   └── data
+│   │       └── aws_ami.tf
+│   └── rds_instance
+│       ├── main.tf
+│       ├── variables.tf
+│       ├── outputs.tf
+│       └── data
+│           └── aws_db_subnet_group.tf
